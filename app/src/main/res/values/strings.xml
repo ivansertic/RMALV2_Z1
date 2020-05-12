@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lv2z1</string>
+    <string name="nameTag">Name: </string>
+    <string name="linkTag">Picture Link: </string>
+    <string name="dateOfBirthTag">Date Of Birth: </string>
+    <string name="diedTag">Died At: </string>
+    <string name="descriptionTag">Description: </string>
+    <string name="quotesTag">Quotes: </string>
+    <string name="addTag">Add</string>
+    <string name="showListTag">Show Persons</string>
+    <string name="addQuote">Add Quote</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topMargin">20dp</dimen>
+    <dimen name="bottomMargin">10dp</dimen>
+    <dimen name="leftMargin">80dp</dimen>
+    <dimen name="rightMargin">15dp</dimen>
+    <dimen name="noneMargin">0dp</dimen>
+    <dimen name="texBoxHeight">100dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="largeRightMargin">190dp</dimen>
+    <dimen name="smallLeftMargin">20dp</dimen>
+</resources>

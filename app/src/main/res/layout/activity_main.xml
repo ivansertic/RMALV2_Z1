@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/topMargin"
+        app:layout_constraintBottom_toBottomOf="@id/editNameId"
+        android:text="@string/nameTag"/>
+
+    <EditText
+        android:id="@+id/editNameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/leftMargin" />
+
+    <TextView
+        android:id="@+id/dateOfBirthId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameId"
+        android:layout_marginTop="@dimen/topMargin"
+        android:text="@string/dateOfBirthTag"
+        app:layout_constraintBottom_toBottomOf="@id/editDateOfBirth"/>
+
+    <EditText
+        android:id="@+id/editDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/dateOfBirthId"
+        app:layout_constraintTop_toBottomOf="@id/editNameId"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/leftMargin" />
+
+    <TextView
+        android:id="@+id/dateOfDeathId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateOfBirthId"
+        android:layout_marginTop="@dimen/topMargin"
+        android:text="@string/diedTag"
+        app:layout_constraintBottom_toBottomOf="@id/editDateOfDeath"/>
+
+    <EditText
+        android:id="@+id/editDateOfDeath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/dateOfDeathId"
+        app:layout_constraintTop_toBottomOf="@id/editDateOfBirth"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/leftMargin" />
+
+    <TextView
+        android:id="@+id/pictureLinkId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateOfDeathId"
+        android:layout_marginTop="@dimen/topMargin"
+        android:text="@string/linkTag"
+        app:layout_constraintBottom_toBottomOf="@id/editPictureLinkId"/>
+
+    <EditText
+        android:id="@+id/editPictureLinkId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/pictureLinkId"
+        app:layout_constraintTop_toBottomOf="@id/editDateOfDeath"
+        android:gravity="center"
+        android:autoLink="web"
+        android:layout_marginLeft="@dimen/leftMargin" />
+
+    <TextView
+        android:id="@+id/descriptionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topMargin"
+        android:gravity="center"
+        android:text="@string/descriptionTag"
+        app:layout_constraintTop_toBottomOf="@id/editPictureLinkId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/editDescriptionID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/texBoxHeight"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionId"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/quotesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topMargin"
+        android:text="@string/quotesTag"
+        app:layout_constraintTop_toBottomOf="@+id/editDescriptionID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editQuotesId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/texBoxHeight"
+        app:layout_constraintTop_toBottomOf="@+id/quotesId"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="@dimen/topMargin"/>
+
+    <Button
+        android:id="@+id/addPersonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottomMargin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/addTag"/>
+    <Button
+        android:id="@+id/showListId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/bottomMargin"
+        android:text="@string/showListTag"/>
+    <Button
+        android:id="@+id/addQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/addPersonId"
+        app:layout_constraintRight_toLeftOf="@id/showListId"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/bottomMargin"
+        android:text="@string/addQuote"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
